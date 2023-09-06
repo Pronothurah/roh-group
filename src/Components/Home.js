@@ -1,6 +1,6 @@
 import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
-import BannerImage from "../Assets/home-banner-image.png";
+import BannerImage from "../Assets/about-background.png";
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -14,11 +14,13 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Your Favourite Food Delivered Hot & Fresh
+          Your Beverage Journey Begins Here
           </h1>
           <p className="primary-text">
-            Healthy switcher chefs do all the prep work, like peeding, chopping
-            & marinating, so you can cook a fresh food.
+          From Classics to Craft: <br/>
+          Explore our diverse range of beverages, each one chosen to elevate your moments and enhance your 
+          gatherings. Join us in celebrating the art of beverage craftsmanship and the joy of sharing great 
+          tastes with great company. 
           </p>
           <button className="secondary-button">
             Order Now <FiArrowRight />{" "}
