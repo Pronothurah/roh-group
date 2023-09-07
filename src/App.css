@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
 }
+
+:root {
+  --primary-color: #1e1e1e;
+  --secondary-color: #b8bbd1;
+  --color-white: #fff; 
+}
 img {
   max-width: 100%;
   height: auto;
@@ -20,7 +26,7 @@ body {
 }
 
 body {
-  background-color: #f6f6f6;
+  background-color: var(--primary-color);
 }
 
 nav {
@@ -35,13 +41,13 @@ nav {
 .navbar-links-container a {
   margin-right: 3rem;
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
   font-size: 1.1rem;
   font-weight: 600;
 }
 .primary-button {
   padding: 0.9rem 1.75rem;
-  background-color: white;
+  background-color: var(--secondary-color);
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -54,7 +60,7 @@ nav {
   font-size: 1.15rem;
 }
 .primary-button:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: var(--color-white);
 }
 .navbar-menu-container svg text {
   font-size: 1.5rem;
@@ -85,26 +91,26 @@ nav {
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
-  color: #4c4c4c;
+  color: var(--secondary-color);
   /* line-height: 5rem; */
   max-width: 600px;
 }
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 500px;
-  color: #6a6a6a;
+  color: var(--secondary-color);
   margin: 1.5rem 0rem;
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: var(--secondary-color);;
   outline: none;
   border: none;
   border-radius: 5rem;
   font-size: 1.1rem;
   cursor: pointer;
   font-weight: 600;
-  color: white;
+  color: #000;
   transition: 0.2s;
   display: flex;
   align-items: center;
@@ -115,7 +121,7 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #e48f0f;
+  background-color: #fff;
 }
 .about-section-container {
   margin-top: 20rem;
@@ -143,7 +149,7 @@ nav {
 }
 .primary-subheading {
   font-weight: 700;
-  color: #fe9e0d;
+  color: var(--color-white);
   font-size: 1.15rem;
 }
 .about-buttons-container {
@@ -234,7 +240,7 @@ nav {
 }
 .testimonial-section-bottom {
   margin-top: 2rem;
-  background-color: white;
+  background-color: var(--color-white);
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
@@ -257,7 +263,7 @@ nav {
 .testimonials-stars-container svg {
   margin: 0rem 0.25rem;
   font-size: 1.5rem;
-  color: #fe9e0d;
+  color: var(--secondary-color);
 }
 .testimonial-section-bottom h2 {
   margin-top: 1.5rem;

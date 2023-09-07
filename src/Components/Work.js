@@ -1,22 +1,23 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
+// import PickMeals from "../Assets/pick-meals-image.png";
+// import ChooseMeals from "../Assets/choose-image.png";
+// import DeliveryMeals from "../Assets/delivery-image.png";
+// import { BiSolidTruck } from "react-icons/bi"
 
 const Work = () => {
   const workInfoData = [
     {
-      image: PickMeals,
+      // image: BiSolidTruck,
       title: "Order Drinks",
       text: "Explore our diverse collection, from the classics to the rare and exceptional.",
     },
     {
-      image: ChooseMeals,
+      // image: ChooseMeals,
       title: "Favorites List",
       text: "Create your personalized list of favorite drinks. Easily reorder your go-to beverages for a hassle-free shopping experience.",
     },
     {
-      image: DeliveryMeals,
+      // image: DeliveryMeals,
       title: "Swift Deliveries",
       text: "Enjoy the convenience of doorstep delivery. Our efficient delivery service ensures your order arrives promptly and in perfect condition.",
     },
