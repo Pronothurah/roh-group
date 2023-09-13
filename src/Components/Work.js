@@ -1,13 +1,11 @@
 import React from "react";
-// import PickMeals from "../Assets/pick-meals-image.png";
-// import ChooseMeals from "../Assets/choose-image.png";
-// import DeliveryMeals from "../Assets/delivery-image.png";
-// import { BiSolidTruck } from "react-icons/bi"
+
+import { FaTruck } from "react-icons/fa"
 
 const Work = () => {
   const workInfoData = [
     {
-      // image: BiSolidTruck,
+      icon: <FaTruck />,
       title: "Order Drinks",
       text: "Explore our diverse collection, from the classics to the rare and exceptional.",
     },
@@ -38,7 +36,7 @@ const Work = () => {
         {workInfoData.map((data) => (
           <div className="work-section-info" key={data.title}>
             <div className="info-boxes-img-container">
-              <img src={data.image} alt="" />
+              <img src={data.icon} alt="" />
             </div>
             <h2>{data.title}</h2>
             <p>{data.text}</p>

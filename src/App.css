@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +7,13 @@
 }
 
 :root {
+  --font-base: 'Cormorant Upright', serif;
   --primary-color: #1e1e1e;
   --secondary-color: #b8bbd1;
-  --color-white: #fff; 
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-white: #fff;
+  --color-golden: #DCCA87;  
 }
 img {
   max-width: 100%;
@@ -35,19 +40,22 @@ nav {
   justify-content: space-between;
   min-height: 90px;
 }
+
 .navbar-menu-container {
   display: none;
 }
+
 .navbar-links-container a {
   margin-right: 3rem;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--color-crimson);
   font-size: 1.1rem;
   font-weight: 600;
 }
+
 .primary-button {
   padding: 0.9rem 1.75rem;
-  background-color: var(--secondary-color);
+  background-color: var(--color-golden);
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -56,12 +64,15 @@ nav {
   font-weight: 600;
   transition: 0.2s;
 }
+
 .navbar-cart-icon {
   font-size: 1.15rem;
 }
+
 .primary-button:hover {
-  background-color: var(--color-white);
+  background-color: var(--color-crimson);
 }
+
 .navbar-menu-container svg text {
   font-size: 1.5rem;
   cursor: pointer;
@@ -71,6 +82,7 @@ nav {
   display: flex;
   padding-top: 3rem;
 }
+
 .home-bannerImage-container {
   position: absolute;
   top: -100px;
@@ -78,10 +90,12 @@ nav {
   z-index: -2;
   max-width: 700px;
 }
+
 .home-image-section {
   max-width: 600px;
   flex: 1;
 }
+
 .home-text-section {
   flex: 1;
   display: flex;
@@ -89,12 +103,14 @@ nav {
   justify-content: center;
   align-items: flex-start;
 }
+
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
-  color: var(--secondary-color);
+  color: var(--color-golden);
   /* line-height: 5rem; */
   max-width: 600px;
 }
+
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 500px;
@@ -103,7 +119,7 @@ nav {
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: var(--secondary-color);;
+  background-color: var(--color-golden);;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -121,7 +137,7 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #fff;
+  background-color: var(--color-crimson);
 }
 .about-section-container {
   margin-top: 20rem;
@@ -149,8 +165,9 @@ nav {
 }
 .primary-subheading {
   font-weight: 700;
-  color: var(--color-white);
-  font-size: 1.15rem;
+  color: var(--color-crimson);
+  font-size: 1.5rem;
+  font-style: var(--font-base);
 }
 .about-buttons-container {
   margin-top: 2rem;
@@ -186,7 +203,7 @@ nav {
   margin: 6rem 0rem;
 }
 .contact-form-container {
-  background-color: white;
+  background-color: var(--color-white);
   max-width: 700px;
   width: 100%;
   margin-top: 3rem;
@@ -235,12 +252,12 @@ nav {
 .footer-section-columns span {
   margin: 0.25rem 0rem;
   font-weight: 600;
-  color: #4c4c4c;
+  color: var(--color-crimson);
   cursor: pointer;
 }
 .testimonial-section-bottom {
   margin-top: 2rem;
-  background-color: var(--color-white);
+  background-color: var(--color-crimson);
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
@@ -263,7 +280,7 @@ nav {
 .testimonials-stars-container svg {
   margin: 0rem 0.25rem;
   font-size: 1.5rem;
-  color: var(--secondary-color);
+  color: var(--color-golden);
 }
 .testimonial-section-bottom h2 {
   margin-top: 1.5rem;
@@ -287,7 +304,7 @@ nav {
 .work-section-info {
   width: 290px;
   min-height: 350px;
-  background-color: white;
+  background-color: var(--color-crimson);
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
