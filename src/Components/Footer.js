@@ -1,5 +1,5 @@
 import React from "react";
-// import Logo from "../Assets/Logo.svg";
+import Logo from "../Assets/RoH brand logo.png";
 import { BsTwitter } from "react-icons/bs";
 import { IoLogoInstagram } from "react-icons/io";
 import { RiChat1Line } from "react-icons/ri";
@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer-wrapper">
       <div className="footer-section-one">
         <div className="footer-logo-container">
-          {/* <img src={Logo} alt="" /> */}
+          <img src={Logo} alt="footer-logo" />
         </div>
         <div className="footer-icons">
           <BsTwitter />

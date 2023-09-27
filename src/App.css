@@ -38,7 +38,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 90px;
+  height: 90px;
 }
 
 .navbar-menu-container {
@@ -51,6 +51,21 @@ nav {
   color: var(--color-crimson);
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.nav-logo-container {
+  width: 150px; /* Set the container width to the desired width */
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  /* overflow: hidden; */
+}
+
+.nav-logo-container img{
+  width: 100%; /* Make the image width 100% of the container's width */
+  height: 70%; /* Allow the image to adjust its height while maintaining aspect ratio */
+  object-fit: cover;
 }
 
 .primary-button {
@@ -225,8 +240,18 @@ nav {
   display: flex;
   margin-top: 10rem;
 }
+
 .footer-logo-container {
-  max-width: 110px;
+  width: 100%; /* Set the container width to the desired width */
+  height: 100px;
+  display: flex;
+  align-items: center; 
+}
+
+.footer-logo-container img{
+  width: 100%; /* Make the image width 100% of the container's width */
+  height: 70%; /* Allow the image to adjust its height while maintaining aspect ratio */
+  object-fit: cover;
 }
 .footer-icons {
   margin-top: 2.5rem;
