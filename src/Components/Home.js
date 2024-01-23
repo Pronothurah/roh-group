@@ -3,6 +3,10 @@ import React from "react";
 import BannerImage from "../Assets/about-background.png";
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
+import Testimonial from "./Testimonial";
+import About from "./About";
+import Work from "./Work";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -30,7 +34,12 @@ const Home = () => {
           <img src={BannerImage} alt="" />
         </div>
       </div>
+      <About />
+      <Work />
+      <Testimonial />
+      <Contact />
     </div>
+
   );
 };
 

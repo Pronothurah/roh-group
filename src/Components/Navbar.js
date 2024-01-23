@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import Logo from "../Assets/RoH brand logo.jpg";
+import { Link } from "react-router-dom";
+import Logo from "../Assets/ROH AND BARRELS Logo-03.png";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
@@ -44,7 +45,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="" />
+      <Link to="/">
+          <img src={Logo} alt="" />
+        </Link>
       </div>
       <div className="navbar-links-container">
         <a href="">Home</a>
